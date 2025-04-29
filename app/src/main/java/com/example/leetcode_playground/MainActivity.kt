@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.leetcode_playground.textToSpeech.TextToSpeechScreen
 import com.example.leetcode_playground.ui.theme.Leetcode_playgroundTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,8 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Leetcode_playgroundTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    TextToSpeechScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
